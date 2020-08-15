@@ -99,17 +99,17 @@ class LinkedList:                               #Linked list Class
                 
 
 
-    def delete_by_position(self,pos):
-        if pos > self.count_nodes():
-            print("Position does not exist")
+#     def delete_by_position(self,pos):
+#         if pos > self.count_nodes():
+#             print("Position does not exist")
         
-        elif pos == self.count_nodes():
-            delete_end()
-            print("Last element deleted ")
+#         elif pos == self.count_nodes():
+#             delete_end()
+#             print("Last element deleted ")
 
-        else : 
-            itr = self.head
-            while itr.next : 
+#         else : 
+#             itr = self.head
+#             while itr.next : 
 
                 
 
