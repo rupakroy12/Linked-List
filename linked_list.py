@@ -68,6 +68,24 @@ class LinkedList:                               #Linked list Class
             count+=1
         # print(f"Total number of Nodes are : {count}")
         return count
+    
+     def insert_any_position(self,pos,data):     # insert at any position
+        if self.head is None:
+            print("Linked List is Empty")
+        else:
+            ptr = self.head
+            count = 0
+            while ptr.next:
+                if count==pos-1:
+                    break
+                
+                count+=1
+                ptr = ptr.next
+                
+            node = Node(data)
+            node.next=ptr.next
+            ptr.next = node
+
 
 
 
